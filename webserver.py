@@ -9,6 +9,6 @@ def hello():
 
 @app.route('/loadtest1')
 def loadtest1():
-    return "<H1> Region: "+ec2_metadata.region+"</H1><P><H1> Instance ID:" + ec2_metadata.instance_id + "</H1><P><H1> Subnet ID: "+ec2_metadata.subnet_id+"</H1>"
+    return "<H1> Region: "+ec2_metadata.region+"</H1><P><H1> Instance ID:" + ec2_metadata.instance_id + "</H1>"
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=80)
