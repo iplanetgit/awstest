@@ -1,0 +1,10 @@
+[Unit]
+Description=My Python App
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /var/www/mypythonapp/index.py > /var/www/mypythonapp/log.txt
+Type=idle
+
+[Install]
+WantedBy=multi-user.target
